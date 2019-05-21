@@ -18,4 +18,14 @@ public class AccountManagement {
 		return this.map;
 	}
 	
+	public void convertToJson() {
+		Account acc1 = new Account("Humza", "Younus", 123);
+		
+		serv.add(map, acc1);
+		
+		JSONObject jsonobj = new JSONObject(map);
+		System.out.println(jsonobj.toString(0));
+		
+	}
+	
 }
