@@ -19,14 +19,22 @@ public class Account {
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-
+	public String getFirstName() {
+		return this.firstName;
+	}
 
 	
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	public String getLastName() {
+		return this.lastName;
+	}
 
 	public void setAccNum(int num) {
 		this.accountNumber = num;
+	}
+	public int getAccNum() {
+		return this.accountNumber;
 	}
 }

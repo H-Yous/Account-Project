@@ -4,11 +4,9 @@ import java.util.Map;
 
 public class Service {
 
-	private int count = 1;
 	
 	public void add(Map<Integer, Account> map, Account account) {
-		map.put(count, account);
-		this.count++;
+		map.put(account.getAccNum(), account);
 	}
 	
 	public void get(Map<Integer, Account> map, int key) {
