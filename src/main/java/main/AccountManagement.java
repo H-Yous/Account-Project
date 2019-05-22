@@ -2,6 +2,7 @@ package main;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import org.json.JSONObject;
 
@@ -15,16 +16,15 @@ public class AccountManagement {
 	}
 	
 	public Map<Integer, Account> getMap() {
-		return this.map;
+		return map;
 	}
 	
 	public JSONObject convertToJson() {
-		Account acc1 = new Account("Humza", "Younus", 123);
-		
-		serv.add(map, acc1);
 		
 		JSONObject jsonobj = new JSONObject(map);
 		return jsonobj;
 	}
+	
+	
 	
 }
