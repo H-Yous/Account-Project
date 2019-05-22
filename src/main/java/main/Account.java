@@ -1,10 +1,26 @@
 package main;
 
-public class Account {
+import javax.persistence.*;
+import javax.validation.constraints.*;
 
-	private String firstName;
-	private String lastName;
+@Entity
+@Table(name="Accounts")
+public class Account {
+	
+	
+	@Id @GeneratedValue(strategy=GenerationType.AUTO)
 	private int accountNumber;
+
+	@Column(name="FirstName", length=100)
+	
+	@NotNull
+	private String firstName;
+	
+	@Column(name="LastName", length = 100)
+	
+	@NotNull
+	private String lastName;
+	
 	
 	public Account() {
 		
